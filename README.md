@@ -4,11 +4,11 @@ Exploratory Data Analysis der Hausverkäufe in King County (Seattle und Umgebung
 
 ## Auf einen Blick
 
-| | |
-| --- | --- |
-| **Kunde** | Jacob Phillips (Käufer): unbegrenztes Budget, 4+ Badezimmer oder ein kleineres Haus in der Nähe, großes Grundstück (Tennisplatz & Pool), Golf, historisch, keine Wasserlage |
-| **Daten** | King County House Sales, rund 21.600 Verkäufe von Mai 2014 bis Mai 2015 in 70 Postleitzahlgebieten |
-| **Quelle** | PostgreSQL-Datenbank, Schema `eda`, zwei Tabellen (`king_county_house_sales`, `king_county_house_details`), per JOIN zusammengeführt |
+|                |                                                                                                                                                                                                                                                              |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Kunde**      | Jacob Phillips (Käufer): unbegrenztes Budget, 4+ Badezimmer oder ein kleineres Haus in der Nähe, großes Grundstück (Tennisplatz & Pool), Golf, historisch, keine Wasserlage                                                                                  |
+| **Daten**      | King County House Sales, rund 21.600 Verkäufe von Mai 2014 bis Mai 2015 in 70 Postleitzahlgebieten                                                                                                                                                           |
+| **Quelle**     | PostgreSQL-Datenbank, Schema `eda`, zwei Tabellen (`king_county_house_sales`, `king_county_house_details`), per JOIN zusammengeführt                                                                                                                         |
 | **Hypothesen** | H1: Große Grundstücke liegen eher außerhalb der Stadtzentren. H2: Historische Häuser haben im Schnitt weniger Badezimmer als neuere Häuser. H3: Je größer das Grundstück, desto höher der Preis, aber der Zusammenhang ist schwächer als bei der Wohnfläche. |
 
 ## Ergebnisse in Kürze
@@ -25,16 +25,16 @@ Exploratory Data Analysis der Hausverkäufe in King County (Seattle und Umgebung
 
 Die Dateien sind in der Reihenfolge nummeriert, in der man sie durcharbeitet.
 
-| Datei / Ordner | Inhalt |
-| --- | --- |
-| [01_assignment.md](01_assignment.md) | Projektbeschreibung: Daten, Aufgaben, Deliverables und Kundenliste |
-| [02_workflow.md](02_workflow.md) | Empfohlener EDA-Workflow von der Datenprüfung bis zur Präsentation |
-| [03_fetching_the_data_eda.ipynb](03_fetching_the_data_eda.ipynb) | Verbindung zur PostgreSQL-Datenbank (psycopg2, SQLAlchemy) und Laden der Daten in einen DataFrame |
-| [04_eda.ipynb](04_eda.ipynb) | **Haupt-Notebook:** dokumentierte Analyse mit Hypothesen, Bereinigung, Visualisierungen, Tests, Insights und Empfehlungen |
-| [column_names.md](column_names.md) | Datenwörterbuch der Spalten |
-| [data/](data/) | Ablageort für die CSV-Datei (`EDA_data.csv`). Der Ordner ist getrackt, die Daten selbst sind per `.gitignore` ausgeschlossen. |
-| [.env.example](.env.example) | Vorlage für die Datenbank-Zugangsdaten |
-| [pyproject.toml](pyproject.toml), [uv.lock](uv.lock) | Projektkonfiguration und gesperrte Abhängigkeiten |
+| Datei / Ordner                                                   | Inhalt                                                                                                                        |
+| ---------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| [01_assignment.md](01_assignment.md)                             | Projektbeschreibung: Daten, Aufgaben, Deliverables und Kundenliste                                                            |
+| [02_workflow.md](02_workflow.md)                                 | Empfohlener EDA-Workflow von der Datenprüfung bis zur Präsentation                                                            |
+| [03_fetching_the_data_eda.ipynb](03_fetching_the_data_eda.ipynb) | Verbindung zur PostgreSQL-Datenbank (psycopg2, SQLAlchemy) und Laden der Daten in einen DataFrame                             |
+| [04_eda.ipynb](04_eda.ipynb)                                     | **Haupt-Notebook:** dokumentierte Analyse mit Hypothesen, Bereinigung, Visualisierungen, Tests, Insights und Empfehlungen     |
+| [column_names.md](column_names.md)                               | Datenwörterbuch der Spalten                                                                                                   |
+| [data/](data/)                                                   | Ablageort für die CSV-Datei (`EDA_data.csv`). Der Ordner ist getrackt, die Daten selbst sind per `.gitignore` ausgeschlossen. |
+| [.env.example](.env.example)                                     | Vorlage für die Datenbank-Zugangsdaten                                                                                        |
+| [pyproject.toml](pyproject.toml), [uv.lock](uv.lock)             | Projektkonfiguration und gesperrte Abhängigkeiten                                                                             |
 
 ## Methodik
 
@@ -96,7 +96,6 @@ Die Präsentation für nicht-technische Kunden dauert 10 Minuten und umfasst 10 
 
 - [Praesentation_Jacob_Phillips.pdf](Praesentation_Jacob_Phillips.pdf): PDF-Export der Folien
 - [Praesentation_Jacob_Phillips.pptx](Praesentation_Jacob_Phillips.pptx): PowerPoint-Datei mit Sprechernotizen
-- [Praesentation_Leitfaden.md](Praesentation_Leitfaden.md): Stichpunkt-Leitfaden mit Zeitplan und möglichen Fragen
 
 ## Referenzen
 
